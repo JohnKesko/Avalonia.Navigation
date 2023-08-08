@@ -19,11 +19,14 @@
     <Grid RowDefinitions="*,Auto" Margin="10">
         
         <TransitioningContentControl Content="{Binding CurrentPage}" />
+        
         <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="5" HorizontalAlignment="Right">
             
             <Button Command="{Binding NavigatePreviousCommand}" Content="Back" />
             <Button Command="{Binding NavigateNextCommand}" Content="Next" />
             
         </StackPanel>
+        
     </Grid>
+    
 </Window>
