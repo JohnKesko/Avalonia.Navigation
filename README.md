@@ -38,14 +38,14 @@ To change the view, we have two options:
 ```
 
 ### Page 1:
-<img src="AvaloniaNavigation.Mvvm/Images/Page1.png" width="350">
+<img src="Images/Page1.png" width="350">
 
 ### Page 2 Validation = false
 ##### We can't navigate to the next page until the validation is met.
-<img src="AvaloniaNavigation.Mvvm/Images/Page2.png" width="350">
+<img src="Images/Page2.png" width="350">
 
 ### Page 2 Validation = true:
-<img src="AvaloniaNavigation.Mvvm/Images/Page2.1.png" width="350">
+<img src="Images/Page2.1.png" width="350">
 
 ### Page 3 When there are no more pages, show a message.
-<img src="AvaloniaNavigation.Mvvm/Images/Page3.png" width="350">
+<img src="Images/Page3.png" width="350">
