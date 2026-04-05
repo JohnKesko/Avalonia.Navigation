@@ -1,4 +1,4 @@
-<UserControl x:Class="AvaloniaNavigation.Views.FirstPageView"
+<UserControl x:Class="AvaloniaNavigation.Views.ThirdPageView"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,27 +7,27 @@
              d:DesignHeight="450"
              d:DesignWidth="800"
              x:CompileBindings="True"
-             x:DataType="viewModel:FirstPageViewModel"
+             x:DataType="viewModel:ThirdPageViewModel"
              mc:Ignorable="d">
-    
+
     <Design.DataContext>
-        <viewModel:FirstPageViewModel />
+        <viewModel:ThirdPageViewModel />
     </Design.DataContext>
 
     <StackPanel VerticalAlignment="Center" Spacing="5">
-        
+
         <TextBlock VerticalAlignment="Center"
                    TextAlignment="Center"
                    FontSize="16"
                    FontWeight="SemiBold"
-                   Text="{Binding Title}"
+                   Text="Registration Complete!"
                    TextWrapping="Wrap" />
-        
+
         <TextBlock VerticalAlignment="Center"
                    TextAlignment="Center"
                    FontSize="16"
-                   Text="{Binding Message}"
+                   Text="You have successfully completed the wizard."
                    TextWrapping="Wrap" />
     </StackPanel>
-    
+
 </UserControl>

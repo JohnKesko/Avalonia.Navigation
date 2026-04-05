@@ -1,6 +1,6 @@
 namespace AvaloniaNavigation.Navigation;
 
-public interface INavigation
+public interface INavigationService
 {
     bool CanNavigateNext { get; }
     bool CanNavigatePrevious { get; }

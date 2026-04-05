@@ -21,7 +21,7 @@ public class NavigationService
     public INavigationService? NavigateNext()
     {
         int currentIndex = _pages.IndexOf(CurrentPage);
-        
+
         if (currentIndex + 1 < _pages.Count)
         {
             CurrentPage = _pages[currentIndex + 1];

@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Input;
 using AvaloniaNavigation.Navigation;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -8,24 +8,18 @@ public partial class MainWindowViewModel : ViewModelBase
 {
     private readonly NavigationService _navigationService;
     [ObservableProperty] private INavigationService? _currentPage;
-    
-    public MainWindowViewModel()
+
+    // Dependencies are injected via the DI container
+    public MainWindowViewModel(NavigationService navigationService)
     {
-        var pages = new INavigationService[]
-        {
-            new FirstPageViewModel(),
-            new SecondPageViewModel(),
-            new ThirdPageViewModel()
-        };
-        
-        _navigationService = new NavigationService(pages);
+        _navigationService = navigationService;
         CurrentPage = _navigationService.CurrentPage;
     }
 
     [RelayCommand]
     private void NavigateNext()
     {
-        if (CurrentPage == null  || !CurrentPage.CanNavigateNext) return;
+        if (CurrentPage == null || !CurrentPage.CanNavigateNext) return;
         CurrentPage = _navigationService.NavigateNext();
     }
 

@@ -2,8 +2,8 @@
 
 Simple project to use navigation in Avalonia 11 with CommunityToolkit.MVVM.
 
-* Avalonia 11.0.2
-* CommunityToolKit.MVVM 8.2.1
+* Avalonia 11.3.1
+* CommunityToolKit.MVVM 8.4.2
 ---
 
 The OG implementation using ReactiveUI.

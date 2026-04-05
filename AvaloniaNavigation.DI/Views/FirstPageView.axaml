@@ -9,25 +9,25 @@
              x:CompileBindings="True"
              x:DataType="viewModel:FirstPageViewModel"
              mc:Ignorable="d">
-    
+
     <Design.DataContext>
         <viewModel:FirstPageViewModel />
     </Design.DataContext>
 
     <StackPanel VerticalAlignment="Center" Spacing="5">
-        
+
         <TextBlock VerticalAlignment="Center"
                    TextAlignment="Center"
                    FontSize="16"
                    FontWeight="SemiBold"
                    Text="{Binding Title}"
                    TextWrapping="Wrap" />
-        
+
         <TextBlock VerticalAlignment="Center"
                    TextAlignment="Center"
                    FontSize="16"
                    Text="{Binding Message}"
                    TextWrapping="Wrap" />
     </StackPanel>
-    
+
 </UserControl>
