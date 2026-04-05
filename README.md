@@ -2,8 +2,13 @@
 
 Simple project to use navigation in Avalonia 11 with CommunityToolkit.MVVM.
 
+Two projects are included:
+- **AvaloniaNavigation.MVVM** — No DI, ViewModels are manually instantiated.
+- **AvaloniaNavigation.DI** — Uses `Microsoft.Extensions.DependencyInjection` for constructor injection of ViewModels and services.
+
 * Avalonia 11.3.1
 * CommunityToolKit.MVVM 8.4.2
+* Microsoft.Extensions.DependencyInjection 9.0.3 (DI project only)
 ---
 
 The OG implementation using ReactiveUI.
@@ -16,10 +21,10 @@ In this sample, the MainWindow.axaml changes the "CurrentPage", which is a UserC
 
 To change the view, we have two options: 
 - ContentControl (Normal)
-  https://docs.avaloniaui.net/docs/controls/contentcontrol
+  https://docs.avaloniaui.net/controls/data-display/contentcontrol
 
 - TransitioningContentControl (With animation)
-  https://docs.avaloniaui.net/docs/controls/transitioningcontentcontrol
+  https://docs.avaloniaui.net/controls/data-display/transitioningcontentcontrol
 
 ```
     <Grid RowDefinitions="*,Auto" Margin="10">
