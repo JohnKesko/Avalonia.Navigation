@@ -13,6 +13,7 @@ namespace AvaloniaNavigation;
 
 public partial class App : Application
 {
+    // Public property that we can use to access a service anywhere in the app, anytime
     public static IServiceProvider Services { get; private set; } = null!;
 
     public override void Initialize()
