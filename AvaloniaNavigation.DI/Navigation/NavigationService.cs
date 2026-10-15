@@ -9,6 +9,9 @@ public class NavigationService
     // This list holds the pages that can be navigated to.
     private readonly List<INavigationService?> _pages;
 
+    // Prop to hold the current page in the navigation stack.
+    public INavigationService? CurrentPage { get; private set; }
+
     // Constructor that initializes the navigation service with a list of pages.
     public NavigationService(IEnumerable<INavigationService> pages)
     {
@@ -16,7 +19,9 @@ public class NavigationService
         CurrentPage = _pages.FirstOrDefault();
     }
 
-    // This method navigates forward to the next page in the navigation stack.
+    // Methods
+    
+    // Method to navigate forward to the next page in the navigation stack.
     // If there is no next page, it returns null.
     public INavigationService? NavigateNext()
     {
@@ -30,7 +35,7 @@ public class NavigationService
         return CurrentPage;
     }
 
-    // This method navigates to the previous page in the navigation stack.
+    // Method to navigate to the previous page in the navigation stack.
     // If there is no previous page, it returns null.
     public INavigationService? NavigatePrevious()
     {
@@ -41,7 +46,4 @@ public class NavigationService
         }
         return CurrentPage;
     }
-
-    // Prop to hold the current page in the navigation stack.
-    public INavigationService? CurrentPage { get; private set; }
 }
