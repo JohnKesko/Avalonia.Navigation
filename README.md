@@ -1,6 +1,6 @@
 # Avalonia.Navigation
 
-Sample project to use navigation in Avalonia 11 with CommunityToolkit.MVVM.
+Sample project how to use navigation in Avalonia 11 with CommunityToolkit.MVVM.
 
 Two projects are included:
 - **AvaloniaNavigation.MVVM** — No DI, ViewModels are manually instantiated.
